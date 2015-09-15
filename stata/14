@@ -4,7 +4,7 @@
 #
 set STATA_VERSION 14
 set STATA_CURPATH /usr/local/stata$STATA_VERSION
-
+set STATA_PNG_FIX /usr/local/stata-png-fix
 conflict stata
 
 proc ModulesHelp { } {
@@ -16,3 +16,5 @@ remove-path PATH /usr/local/bin
 remove-path PATH /usr/local/bin
 
 prepend-path PATH $STATA_CURPATH
+prepend-path LD_LIBRARY_PATH $STATA_PNG_FIX/lib
+prepend-path LD_LIBRARY_PATH $STATA_PNG_FIX/lib64
