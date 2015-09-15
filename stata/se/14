@@ -1,0 +1,13 @@
+#%Module######################################################################
+#
+# Stata modulefile
+#
+module load stata/14
+
+proc ModulesHelp { } {
+puts stderr "This modulefile sets the default version of Stata"
+puts stderr "to $STATA_VERSION for SE"
+}
+
+set-alias stata stata-se
+set-alias xstata xstata-se

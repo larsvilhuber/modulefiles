@@ -1,0 +1,13 @@
+#%Module######################################################################
+#
+# Stata modulefile
+#
+module load stata
+
+proc ModulesHelp { } {
+puts stderr "This modulefile sets the default version of Stata"
+puts stderr "to $STATA_VERSION for MP"
+}
+
+set-alias stata stata-mp
+set-alias xstata xstata-mp
