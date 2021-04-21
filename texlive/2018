@@ -3,15 +3,15 @@
 # texlive modulefile
 #
 set PRODUCT texlive 
-set _VERSION 2014 
+set _VERSION 2018
 
 proc ModulesHelp { } {
 puts stderr "This modulefile s the default version of $PRODUCT"
 puts stderr "to $_VERSION"
 }
 
-prepend-path PATH /cac/contrib/texlive/2014/bin/x86_64-linux
+prepend-path PATH /opt/texlive/$_VERSION/bin/x86_64-linux
 
-prepend-path INFOPATH /cac/contrib/texlive/2014/texmf-dist/doc/info 
-prepend-path MANPATH /cac/contrib/texlive/2014/texmf-dist/doc/man 
+prepend-path INFOPATH /opt/texlive/$_VERSION/texmf-dist/doc/info 
+prepend-path MANPATH  /opt/texlive/$_VERSION/texmf-dist/doc/man 
 
