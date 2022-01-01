@@ -1,0 +1,13 @@
+#%Module######################################################################
+#
+# texlive modulefile
+#
+set PRODUCT R
+set _VERSION 4.0 
+
+proc ModulesHelp { } {
+puts stderr "This modulefile s the default version of $PRODUCT"
+puts stderr "to $_VERSION"
+}
+
+
