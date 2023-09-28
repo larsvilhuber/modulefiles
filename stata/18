@@ -1,0 +1,16 @@
+#%Module######################################################################
+#
+# Stata modulefile
+#
+set STATA_VERSION 18
+set STATA_CURPATH /usr/local/stata$STATA_VERSION
+conflict stata
+
+proc ModulesHelp { } {
+puts stderr "This modulefile sets the default version of Stata"
+puts stderr "to $STATA_VERSION"
+}
+
+remove-path PATH /usr/local/bin
+
+prepend-path PATH $STATA_CURPATH

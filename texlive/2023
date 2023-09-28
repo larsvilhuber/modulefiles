@@ -1,0 +1,17 @@
+#%Module######################################################################
+#
+# texlive modulefile
+#
+set PRODUCT texlive 
+set _VERSION 2023
+
+proc ModulesHelp { } {
+puts stderr "This modulefile s the default version of $PRODUCT"
+puts stderr "to $_VERSION"
+}
+
+prepend-path PATH /opt/texlive/$_VERSION/bin/x86_64-linux
+
+prepend-path INFOPATH /opt/texlive/$_VERSION/texmf-dist/doc/info 
+prepend-path MANPATH  /opt/texlive/$_VERSION/texmf-dist/doc/man 
+
