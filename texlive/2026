@@ -3,7 +3,7 @@
 # texlive modulefile
 #
 set PRODUCT texlive 
-set _VERSION 2018
+set _VERSION 2026
 
 proc ModulesHelp { } {
 puts stderr "This modulefile s the default version of $PRODUCT"
